@@ -5,36 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tajdeed support</title>
 <style>
-:root{--bg:#F6F0E4;--ink:#2A2216;--muted:#7A6B57;--accent:#0B6B4F;--line:#E4D8C3}
-@media (prefers-color-scheme:dark){:root{--bg:#0D1422;--ink:#EEF1F6;--muted:#8E9AB0;--accent:#E2C275;--line:#27344D}}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-main{max-width:680px;margin:0 auto;padding:40px 20px 60px}
-h1{font-size:28px;margin:0 0 4px}h2{font-size:18px;margin:28px 0 6px;color:var(--accent)}
-.muted{color:var(--muted)}a{color:var(--accent)}
-section+section{border-top:1px solid var(--line);margin-top:40px;padding-top:8px}
+:root{--bg:#F6F0E4;--ink:#2A2216;--muted:#7A6B57;--accent:#0B6B4F;--on:#fff;--line:#E4D8C3;--card:#FFFDF8}
+@media (prefers-color-scheme:dark){:root{--bg:#0D1422;--ink:#EEF1F6;--muted:#8E9AB0;--accent:#E2C275;--on:#16110A;--line:#27344D;--card:#151F32}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,sans-serif}
+main{max-width:680px;margin:0 auto;padding:28px 20px 60px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+nav a{padding:7px 14px;border-radius:20px;border:1px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none;font-size:14px}
+nav a.on{background:var(--accent);color:var(--on);border-color:var(--accent)}
+h1{font-size:26px;margin:0 0 4px;line-height:1.3}h2{font-size:18px;margin:26px 0 6px;color:var(--accent)}
+.muted{color:var(--muted)}a{color:var(--accent)}section{display:none}section.on{display:block}
 </style>
 </head>
-<body><main>
-<section>
-<h1>Tajdeed: Renewal Reminders</h1>
-<p class="muted">Document expiry for the family. Arabic, English, French and Spanish.</p>
-<h2>I'm not getting reminders</h2>
-<p>Open iPhone Settings, then Notifications, then Tajdeed, and turn on Allow Notifications. Reminders arrive at 9:00 in the morning on the days you chose.</p>
-<h2>I can't hear the voice reminder</h2>
-<p>Voice reminders play only when your iPhone isn't on silent or in a Focus mode. For a more natural voice, download an Enhanced voice in Settings, then Accessibility, then Spoken Content, then Voices.</p>
-<h2>The scan didn't find the date</h2>
-<p>Hold the card flat in good light so the expiry date is sharp. You can always type the date yourself, in Hijri or Gregorian.</p>
-<h2>Moving to a new iPhone</h2>
-<p>In Settings, tap Save backup file and save it to iCloud Drive or Files. On the new iPhone, tap Restore from file.</p>
-<h2>I already paid on another iPhone</h2>
-<p>Tap Restore purchase in Settings while signed in with the same Apple ID.</p>
-<h2>Contact</h2>
-<p><a href="mailto:support@scanzest.uk">support@scanzest.uk</a> · <a href="privacy.html">Privacy policy</a></p>
-</section>
-<section dir="rtl" lang="ar">
-<h1>تجديد: تذكير تجديد الوثائق</h1>
-<p>لتفعيل التذكيرات: الإعدادات ← الإشعارات ← تجديد ← السماح بالإشعارات. التذكير الصوتي يعمل عندما لا يكون الهاتف على الوضع الصامت. للانتقال إلى آيفون جديد احفظ نسخة احتياطية ثم استعدها. لاستعادة الشراء اضغط «استعادة الشراء» بنفس حساب آبل.</p>
-<p>للتواصل: <a href="mailto:support@scanzest.uk">support@scanzest.uk</a></p>
-</section>
-</main></body>
+<body><main><nav><a id="n-en" href="#en">English</a><a id="n-ar" href="#ar">العربية</a><a id="n-fr" href="#fr">Français</a><a id="n-es" href="#es">Español</a></nav><section id="en" dir="ltr" lang="en"><h1>Tajdeed: Renewal Reminders</h1><p class="muted">Document expiry for the family.</p>
+<h2>I'm not getting reminders</h2><p>Open iPhone Settings › Notifications › Tajdeed and turn on Allow Notifications. Reminders arrive at 9:00 in the morning on the days you chose.</p>
+<h2>I can't hear the voice reminder</h2><p>Voice reminders play only when your iPhone isn't on silent or in a Focus mode. To add a male or female voice, or a more natural one, go to Settings › Accessibility › Spoken Content › Voices.</p>
+<h2>The scan didn't find the date</h2><p>Hold the card flat in good light so the expiry date is sharp, and try again. You can always type the date yourself, in Hijri or Gregorian.</p>
+<h2>Moving to a new iPhone</h2><p>In the app's Settings, tap Save backup file and save it to iCloud Drive or Files. On the new iPhone, tap Restore from file.</p>
+<h2>I already paid on another iPhone</h2><p>Tap Restore purchase in Settings while signed in with the same Apple ID.</p>
+<h2>Contact</h2><p><a href="mailto:support@scanzest.uk">support@scanzest.uk</a> · <a href="privacy.html#en">Privacy policy</a></p></section><section id="ar" dir="rtl" lang="ar"><h1>تجديد: تذكير تجديد الوثائق</h1><p class="muted">مواعيد انتهاء وثائق العائلة في مكان واحد.</p>
+<h2>لا تصلني التذكيرات</h2><p>افتح إعدادات الآيفون › الإشعارات › تجديد وفعّل «السماح بالإشعارات». تصل التذكيرات الساعة ٩ صباحًا في الأيام التي اخترتها.</p>
+<h2>لا أسمع التذكير الصوتي</h2><p>يعمل التذكير الصوتي عندما لا يكون الآيفون على الوضع الصامت أو وضع التركيز. لإضافة صوت رجالي أو نسائي أو صوت أكثر طبيعية: الإعدادات › تسهيلات الاستخدام › المحتوى المنطوق › الأصوات.</p>
+<h2>لم يعثر المسح على التاريخ</h2><p>ضع البطاقة على سطح مستوٍ في إضاءة جيدة بحيث يكون التاريخ واضحًا، ثم حاول مرة أخرى. ويمكنك دائمًا كتابة التاريخ بنفسك، هجريًا أو ميلاديًا.</p>
+<h2>الانتقال إلى آيفون جديد</h2><p>من إعدادات التطبيق اضغط «حفظ نسخة احتياطية» واحفظها في iCloud Drive أو الملفات، ثم اضغط «استعادة من ملف» على الآيفون الجديد.</p>
+<h2>دفعت سابقًا على آيفون آخر</h2><p>اضغط «استعادة الشراء» في الإعدادات باستخدام حساب آبل نفسه.</p>
+<h2>التواصل</h2><p><a href="mailto:support@scanzest.uk">support@scanzest.uk</a> · <a href="privacy.html#ar">سياسة الخصوصية</a></p></section><section id="fr" dir="ltr" lang="fr"><h1>Tajdeed : rappels de renouvellement</h1><p class="muted">Les dates d'expiration de toute la famille.</p>
+<h2>Je ne reçois pas les rappels</h2><p>Ouvrez Réglages › Notifications › Tajdeed et activez Autoriser les notifications. Les rappels arrivent à 9 h les jours choisis.</p>
+<h2>Je n'entends pas le rappel vocal</h2><p>Les rappels vocaux fonctionnent quand l'iPhone n'est pas en silencieux ni en mode Concentration. Pour ajouter une voix masculine, féminine ou plus naturelle : Réglages › Accessibilité › Contenu énoncé › Voix.</p>
+<h2>Le scan n'a pas trouvé la date</h2><p>Posez la carte à plat, bien éclairée, avec la date nette, puis réessayez. Vous pouvez toujours saisir la date vous-même, en calendrier hégirien ou grégorien.</p>
+<h2>Passer à un nouvel iPhone</h2><p>Dans les Réglages de l'app, touchez Enregistrer une sauvegarde et enregistrez-la dans iCloud Drive ou Fichiers. Sur le nouvel iPhone, touchez Restaurer depuis un fichier.</p>
+<h2>J'ai déjà payé sur un autre iPhone</h2><p>Touchez Restaurer l'achat dans les Réglages avec le même identifiant Apple.</p>
+<h2>Contact</h2><p><a href="mailto:support@scanzest.uk">support@scanzest.uk</a> · <a href="privacy.html#fr">Politique de confidentialité</a></p></section><section id="es" dir="ltr" lang="es"><h1>Tajdeed: recordatorios de renovación</h1><p class="muted">Las fechas de caducidad de toda la familia.</p>
+<h2>No me llegan los recordatorios</h2><p>Abre Ajustes › Notificaciones › Tajdeed y activa Permitir notificaciones. Los recordatorios llegan a las 9:00 los días que elegiste.</p>
+<h2>No oigo el recordatorio por voz</h2><p>Los recordatorios por voz suenan cuando el iPhone no está en silencio ni en un modo de concentración. Para añadir una voz masculina, femenina o más natural: Ajustes › Accesibilidad › Contenido leído › Voces.</p>
+<h2>El escaneo no encontró la fecha</h2><p>Coloca la tarjeta plana, con buena luz y la fecha nítida, y vuelve a intentarlo. Siempre puedes escribir la fecha tú mismo, en calendario de la hégira o gregoriano.</p>
+<h2>Cambiar a un iPhone nuevo</h2><p>En los Ajustes de la app, toca Guardar copia de seguridad y guárdala en iCloud Drive o Archivos. En el iPhone nuevo, toca Restaurar desde archivo.</p>
+<h2>Ya pagué en otro iPhone</h2><p>Toca Restaurar compra en Ajustes con el mismo Apple ID.</p>
+<h2>Contacto</h2><p><a href="mailto:support@scanzest.uk">support@scanzest.uk</a> · <a href="privacy.html#es">Política de privacidad</a></p></section></main><script>
+(function(){var ls=["en","ar","fr","es"];function show(l){if(ls.indexOf(l)<0)l="en";ls.forEach(function(x){document.getElementById(x).className=x===l?"on":"";document.getElementById("n-"+x).className=x===l?"on":"";});document.documentElement.lang=l;}
+var h=(location.hash||"").slice(1),n=(navigator.language||"en").slice(0,2);show(ls.indexOf(h)>=0?h:ls.indexOf(n)>=0?n:"en");window.addEventListener("hashchange",function(){show(location.hash.slice(1));});})();
+</script></body>
 </html>
